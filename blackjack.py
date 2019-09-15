@@ -56,3 +56,7 @@ elif p_sum == 21:
         # If player option Stay compare sum of Dealer vs Player
         # If player card sum < 21 && > Dleaer card sum then Player wins!
         # If player card sum < Dealer card sum then Player loses
+
+
+# The dealer should go on getting cards until he hits 16 or above
+# Money and stuff could be nice to
