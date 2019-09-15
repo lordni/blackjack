@@ -1,4 +1,3 @@
-# <REF>https://www.youtube.com/watch?v=yJz2at4Hco4</REF>
 import random
 # BlackJack or 21 game
 # Planing phase
