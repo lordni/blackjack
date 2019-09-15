@@ -15,7 +15,7 @@ while len(dealer_cards) != 2:
 while len(player_cards) != 2:
     player_cards.append(random.randint(1, 11))
     if len(player_cards) == 2:
-        print("You have ", player_cards[1])
+        print("You have ", player_cards, " sum is " , sum(player_cards))
 
 d_sum = sum(dealer_cards)
 p_sum = sum(player_cards)
@@ -39,7 +39,20 @@ while p_sum < 21:
     else:
         print("Dealer has ", d_sum, " with ", dealer_cards)
         print("You now have a total of " + str(p_sum) + " from these cards ", player_cards)
-    
+        if d_sum > p_sum:
+            print("Dealer wins!")
+        else:
+            print("You Win!")
+            break
+
+if p_sum > 21:
+    print("You are BUSTED! Dealers wins.")
+elif p_sum == 21:
+    print("You got BLACKJACK! You Win!! 21")
     
     # Compare sums of the cards between player and dealer
         # If player card sum is greater than 21 = BUST
+        # If player card sum is less than 21 = option Hit or Stay
+        # If player option Stay compare sum of Dealer vs Player
+        # If player card sum < 21 && > Dleaer card sum then Player wins!
+        # If player card sum < Dealer card sum then Player loses
