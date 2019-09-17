@@ -1,39 +1,40 @@
 import random
-# BlackJack or 21 game
-# Planing phase
-    # Dealer cards
-dealer_cards = []
-    # Player cards
-player_cards = []
-# Deal and display Cards
+# BlackJack eller 21 game
+
+# Planlægningsfasen
+    # Dealer kortene array
+    # Spiller kortene array
+
+# Deal
     # Dealer
-while len(dealer_cards) != 2:
-    dealer_cards.append(random.randint(1, 11))
-    #if len(dealer_cards) == 2:
+        # Giv kort til Dealer
+#while len(dealer_cards) < 3:
+#    dealer_cards.append(random.randint(1, 11))
+        
+    # Giv kort til spilleren
+#while len(player_cards) < 3:
+#    player_cards.append(random.randint(1, 11))        
 
-    # Player
-while len(player_cards) != 2:
-    player_cards.append(random.randint(1, 11))
-    #if len(player_cards) == 2:
-
-d_sum = sum(dealer_cards)
+# Udregn og gem summen af spillerens kort
 p_sum = sum(player_cards)
 
+# Print dealer og spillers kort
 print("Dealer has x & ", dealer_cards[1])
 print("You have ", player_cards, " sum is " , sum(player_cards))
 
+# Udregn dealerens kort sum
+d_sum = sum(dealer_cards)
 
-    # Sum cards
-        #Dealer 
-        #Player
-# Compare
-    # Dealer
+
+# Sammelign og fortsæt spillet
+    # Dealer skal finde ud af om sum af kortene er li 21 eller over 21
 if d_sum == 21:
     print("Dealer has ", d_sum, " and wins!")
 elif d_sum > 21:
     print("Dealer busted")
 
-    # Player
+    # Spilleren
+    #
 while p_sum < 21:
     aktion_taken = str(input("Do you want to stay or hit? "))
     if aktion_taken == "hit" or aktion_taken == "h":
