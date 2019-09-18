@@ -16,25 +16,27 @@ import random
 #    player_cards.append(random.randint(1, 11))        
 
 # Udregn og gem summen af spillerens kort
-p_sum = sum(player_cards)
 
 # Print dealer og spillers kort
-print("Dealer has x & ", dealer_cards[1])
-print("You have ", player_cards, " sum is " , sum(player_cards))
+
+#print("Dealer has x & ", dealer_cards[1])
+#print("You have ", player_cards, " sum is " , sum(player_cards))
 
 # Udregn dealerens kort sum
-d_sum = sum(dealer_cards)
-
 
 # Sammelign og fortsæt spillet
-    # Dealer skal finde ud af om sum af kortene er li 21 eller over 21
-if d_sum == 21:
-    print("Dealer has ", d_sum, " and wins!")
-elif d_sum > 21:
-    print("Dealer busted")
+    # Dealer skal finde ud af om sum af kortene er li med 21 eller over 21
 
-    # Spilleren
-    #
+    #print("Dealer has ", d_sum, " and wins!")
+
+    #print("Dealer busted")
+
+# Spilleren
+# Fortsæt loop så lang tid spilleren har en kortsum på under 21
+    # få input om spilleren vil ha et nyt kort eller stå
+        # Hvis "hit" bliver valgt så giv spilleren et kort mere,
+        # udregn summen af kort og udskriv spillerens kort og sum
+    # Ellers
 while p_sum < 21:
     aktion_taken = str(input("Do you want to stay or hit? "))
     if aktion_taken == "hit" or aktion_taken == "h":
