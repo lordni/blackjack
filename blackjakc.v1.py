@@ -2,18 +2,18 @@ import random
 # BlackJack eller 21 game
 
 # Planlægningsfasen
-    # Dealer kortene array
-    # Spiller kortene array
+    # Dealerens kort array
+    # Spillerns kort array
 
 # Deal
-    # Dealer
-        # Giv kort til Dealer
-#while len(dealer_cards) < 3:
-#    dealer_cards.append(random.randint(1, 11))
+# Giv kort til Dealer
+# Mens Dealeren har under 3 kort så gentag
+    # Tildel endnu et kort til dealerens hånd
+    #while len(dealer_cards) < 3:
         
-    # Giv kort til spilleren
+# Giv kort til spilleren
+# Tildel endnu et kort til dealerens hånd
 #while len(player_cards) < 3:
-#    player_cards.append(random.randint(1, 11))        
 
 # Udregn og gem summen af spillerens kort
 
@@ -28,7 +28,6 @@ import random
     # Dealer skal finde ud af om sum af kortene er li med 21 eller over 21
 
     #print("Dealer has ", d_sum, " and wins!")
-
     #print("Dealer busted")
 
 # Spilleren
